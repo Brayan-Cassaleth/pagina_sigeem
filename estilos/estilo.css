@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #f4f6f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: #2e7d32;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    position: relative;
+    position: sticky;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+header.scrolled{
+    background: transparent;
+}
+
+#Logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    margin: 1%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+#Logo:hover{
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+#menu{
+    margin: 18px auto;
+    width: 90%;
+    position: absolute;
+    left: 15%;
+}
+
+ul{
+    list-style: none;
+}
+
+#menu li a{
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+#menu li a:hover{
+    background: #1b5e20;    
+    transition: background 0.3s ease;
+}
+
+#menu > li{
+    float: left;
+}
+
+#menu li ul{
+    display: none;
+    min-width: 140px;
+    position: absolute;
+}
+
+#menu li:hover > ul{
+    display: block;
+    transition: background 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8)
+}
+
+#menu li ul li{
+    position: relative;
+}
+
+#menu li ul li ul{
+    right: -140px;
+    top: 0px;
+}
+
+#ingresar{
+    background-color: #4CAF50;
+    color: white;
+    height: 40px;
+    width: 100px;
+    margin: 1%;
+    right: 10%;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    position: absolute
+}
+
+#ingresar:hover{
+    background-color: #45a049;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8)
+}
+
+#registro{
+    color: white;
+    margin: 2%;
+    right: 2%;
+    font-size: 15px;
+    position: absolute
+}
+
+#registro:hover{
+    font-size: 16px;
+}
+
+#login{
+    background-color: red;
+    height: 350px;
+    width: 20%;
+    margin: auto;
+    padding: 2%;
+    border-radius: 10px;
+    border: none;
+    color: #f4f6f8;
+    position: relative;
+    box-shadow: 0 8px 20px black;
+    background: linear-gradient(to left, #4CAF50, #2b612c);
+    display: none;
+}
+
+#usuario, #password{
+    width: 90%;
+    height: 30px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8)
+}
+
+#cancelar_login{
+    position: absolute;
+    color: white;
+    margin: 1px 105px;
+}
