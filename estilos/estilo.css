@@ -26,11 +26,6 @@ header{
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
 }
 
-#Logo:hover{
-    transform: scale(1.05);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
-}
-
 #menu{
     margin: 18px auto;
     width: 90%;
@@ -106,11 +101,13 @@ ul{
     margin-top: 30px;
     right: 5%;
     font-size: 15px;
-    position: absolute
+    position: absolute;
+    text-decoration: none;
 }
 
 #registro:hover{
     font-size: 16px;
+    text-decoration: underline;
 }
 
 #login{
@@ -154,19 +151,19 @@ button:hover{
 }
 
 .banner{
-    width: 90%;
+    width: 1200px;
     height: 350px;
     margin: 20px auto;
-    background: url("/img/foto5.jpg") no-repeat center center/cover;
+    background: url("/img/imagen_banner.jpeg") no-repeat center center/cover;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    color: black;
+    color: white;
 }
 
-.llamado-accion{
+#llamado-accion{
     width: 70%;
     margin: auto;
     display: flex;
@@ -178,5 +175,21 @@ button:hover{
 .portafolio h1{
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
+
+/* SERVICIOS*/
+#servicios{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);/* dividimos en 4 columnas*/
+    gap: 25px;
+}
+
+#servicios img{
+    width: 100%;
+    height: 180px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+}
