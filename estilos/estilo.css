@@ -150,12 +150,17 @@ button:hover{
     margin: 1px 105px;
 }
 
+hr{
+    width: 80%;
+    margin: auto;
+}
+
 .banner{
     width: 1200px;
     height: 350px;
     margin: 20px auto;
     background: url("/img/imagen_banner.jpeg") no-repeat center center/cover;
-    padding-bottom: 50px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,33 +168,90 @@ button:hover{
     color: white;
 }
 
+.banner h1{
+    font-size: 60px;
+    color: black;
+}
+
+.banner p{
+    font-size: 25px;
+    color: black;
+}
+
 #llamado-accion{
     width: 70%;
-    margin: auto;
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+#llamado-accion h1{
+    margin-bottom: 20px;
 }
 
 .portafolio h1{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
 
 /* SERVICIOS*/
 #servicios{
-    margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);/* dividimos en 4 columnas*/
-    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);/* dividimos en 3 columnas*/
+    gap: 50px;
+    margin: 40px auto;
+    width: 70%;
 }
 
 #servicios img{
-    width: 100%;
-    height: 180px;
-    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+    display: flex;
+    margin: 20px auto;
+    align-items: center;
+}
+
+#servicios h3{
+    margin-bottom: 20px;
+}
+
+/*CLIENTES ALIADOS*/
+#clientes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);/* dividimos en 4 columnas*/
+    gap: 50px;
+    margin: 40px auto;
+    width: 70%;
+}
+
+#clientes h1{
+    text-align: center;
+}
+
+#clientes img{
+    width: 150px;
+}
+
+/*PIE DE PAGINA*/
+#pie-pagina{
+    margin: 30px;
+    text-align: center;
+}
+
+#pie-pagina h1{
+    margin: 20px;
+}
+
+#pie-pagina ul li{
+    margin: 10px;
+}
+
+#pie-pagina ul li img{
+    width: 20px;
 }
