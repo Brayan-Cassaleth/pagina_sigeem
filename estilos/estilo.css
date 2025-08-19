@@ -75,17 +75,27 @@ ul{
     top: 0px;
 }
 
-#ingresar{
-    background-color: #4CAF50;
-    color: white;
-    height: 40px;
-    width: 100px;
+#icon-facebook{
+    height: 30px;
+    width: 30px;
     margin: 19px;
-    right: 12%;
-    font-size: 15px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    right: 8%;
+    position: absolute
+}
+
+#icon-instagram{
+    height: 30px;
+    width: 30px;
+    margin: 19px;
+    right: 5%;
+    position: absolute
+}
+
+#icon-twiter{
+    height: 30px;
+    width: 30px;
+    margin: 19px;
+    right: 2%;
     position: absolute
 }
 
@@ -94,20 +104,6 @@ ul{
     cursor: pointer;
     font-size: 16px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8)
-}
-
-#registro{
-    color: white;
-    margin-top: 30px;
-    right: 5%;
-    font-size: 15px;
-    position: absolute;
-    text-decoration: none;
-}
-
-#registro:hover{
-    font-size: 16px;
-    text-decoration: underline;
 }
 
 #login{
@@ -156,7 +152,7 @@ hr{
 }
 
 .banner{
-    width: 1200px;
+    width: 90%;
     height: 350px;
     margin: 20px auto;
     background: url("/img/imagen_banner.jpeg") no-repeat center center/cover;
@@ -254,4 +250,46 @@ hr{
 
 #pie-pagina ul li img{
     width: 20px;
+}
+
+@media (max-width: 1000px) {
+    .banner{
+        width: 80%;
+    }
+}
+
+@media (max-width: 900px){
+    #servicios{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #clientes{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 670px){
+    #clientes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px){
+    .banner h1{
+        font-size: 40px;
+        color: black;
+    }
+
+    .banner p{
+        font-size: 20px;
+        color: black;
+    }
+
+    #servicios{
+        grid-template-columns: 1fr;
+    }
+
+    #clientes{
+        grid-template-columns: 1fr;
+    }
 }
