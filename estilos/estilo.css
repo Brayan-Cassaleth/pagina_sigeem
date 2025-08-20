@@ -48,6 +48,7 @@ ul{
 #menu li a:hover{
     background: #1b5e20;    
     transition: background 0.3s ease;
+    border-radius: 10px;
 }
 
 #menu > li{
@@ -63,7 +64,6 @@ ul{
 #menu li:hover > ul{
     display: block;
     transition: background 0.3s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8)
 }
 
 #menu li ul li{
