@@ -30,7 +30,7 @@ header{
     margin: 18px auto;
     width: 90%;
     position: absolute;
-    left: 10%;
+    left: 120px;
 }
 
 ul{
@@ -79,7 +79,7 @@ ul{
     height: 30px;
     width: 30px;
     margin: 19px;
-    right: 8%;
+    right: 80px;
     position: absolute
 }
 
@@ -87,7 +87,7 @@ ul{
     height: 30px;
     width: 30px;
     margin: 19px;
-    right: 5%;
+    right: 45px;
     position: absolute
 }
 
@@ -95,7 +95,7 @@ ul{
     height: 30px;
     width: 30px;
     margin: 19px;
-    right: 2%;
+    right: 10px;
     position: absolute
 }
 
@@ -187,6 +187,10 @@ hr{
     margin-bottom: 20px;
 }
 
+#llamado-accion p{
+    font-size: 20px;
+}
+
 .portafolio h1{
     text-align: center;
     margin-top: 50px;
@@ -236,16 +240,16 @@ hr{
 
 /*PIE DE PAGINA*/
 #pie-pagina{
-    margin: 30px;
+    margin: 20px;
     text-align: center;
 }
 
 #pie-pagina h1{
-    margin: 20px;
+    margin: 25px;
 }
 
 #pie-pagina ul li{
-    margin: 10px;
+    margin: 5px;
 }
 
 #pie-pagina ul li img{
@@ -267,6 +271,7 @@ hr{
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
 
 @media (max-width: 670px){
     #clientes{
