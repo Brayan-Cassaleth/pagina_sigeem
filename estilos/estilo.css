@@ -75,37 +75,6 @@ ul{
     top: 0px;
 }
 
-#icon-facebook{
-    height: 30px;
-    width: 30px;
-    margin: 19px;
-    right: 80px;
-    position: absolute
-}
-
-#icon-instagram{
-    height: 30px;
-    width: 30px;
-    margin: 19px;
-    right: 45px;
-    position: absolute
-}
-
-#icon-twiter{
-    height: 30px;
-    width: 30px;
-    margin: 19px;
-    right: 10px;
-    position: absolute
-}
-
-#ingresar:hover{
-    background-color: #45a049;
-    cursor: pointer;
-    font-size: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8)
-}
-
 hr{
     width: 80%;
     margin: auto;
@@ -121,7 +90,6 @@ hr{
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    color: white;
 }
 
 .banner h1{
@@ -200,22 +168,28 @@ hr{
 
 /*PIE DE PAGINA*/
 #pie-pagina{
-    margin: 20px;
+    display: grid;
     text-align: center;
     height: 250px;
-    padding-top: 10px;
+    padding: 50px;
+    color: #f4f6f8;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #2e7d32;
+    font-size: 18px;
 }
 
 #pie-pagina h1{
-    margin: 25px;
+    margin-bottom: 30px;
 }
 
-#pie-pagina ul li{
+#pie-pagina img{
+    width: 40px;
     margin: 5px;
 }
 
-#pie-pagina ul li img{
+#pie-pagina .icono_indicativo{
     width: 20px;
+    margin: 10px 10px;
 }
 
 @media (max-width: 1000px) {
@@ -238,6 +212,11 @@ hr{
 @media (max-width: 670px){
     #clientes{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    #pie-pagina{
+        grid-template-columns: 1fr;
+        height: 350px;
     }
 }
 
