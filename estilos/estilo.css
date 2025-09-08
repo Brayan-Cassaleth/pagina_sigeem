@@ -90,16 +90,38 @@ hr{
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
 }
 
+.banner::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2); /* negro semi-transparente */
+      z-index: 0;
+    }
+
 .banner h1{
+    position: relative;
+    color: white;
     font-size: 60px;
-    color: black;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+    text-shadow: 2px 2px 5px black; /* sombra para mayor contraste */
 }
 
 .banner p{
     font-size: 25px;
-    color: black;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+    text-shadow: 2px 2px 5px black; /* sombra para mayor contraste */
 }
 
 #llamado-accion{
@@ -166,6 +188,69 @@ hr{
     width: 150px;
 }
 
+/*FORMULARIO AGENDAR CITAS*/
+#formulario{
+    width: 95%;
+    height: 500px;
+    margin: auto;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 50px;
+
+}
+
+#texto_formulario{
+    width: 80%;
+    margin-left: 100px;
+    height: 400px;
+    font-size: 18px;
+}
+
+#agendar_cita{
+    height: 400px;
+    width: 80%;
+    padding: 20px 30px;
+    border-radius: 8px;
+    background-color: #c7e7c9;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+#agendar_cita .campo{
+    width: 80%;
+    height: 30px;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#agendar_cita .campo_area{
+    width: 80%;
+    height: 100px;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+#agendar_cita #boton{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(218, 218, 218);
+}
+
+#agendar_cita #boton:hover{
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+}
+
 /*PIE DE PAGINA*/
 #pie-pagina{
     display: grid;
@@ -195,6 +280,14 @@ hr{
 @media (max-width: 1000px) {
     .banner{
         width: 80%;
+    }
+
+    #formulario{
+        grid-template-columns: 1fr;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -233,9 +326,37 @@ hr{
 
     #servicios{
         grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #clientes{
         grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #formulario{
+        grid-template-columns: 1fr;
+        height: 1000px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #texto_formulario{
+        height: 500px;
+    }
+
+    #agendar_cita{
+        margin: auto;
+    }
+
+    #pie-pagina{
+        height: 400px;
+        width: 100%;
     }
 }

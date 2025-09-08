@@ -28,7 +28,7 @@
                 </li>
                 <li><a href="">Contactenos</a>
                     <ul>
-                        <li><a href="paginas/agendar_cita.html">Agendar cita</a></li>
+                        <li><a href="#formulario">Agendar cita</a></li>
                     </ul>
                 </li>
             </ul>
@@ -88,7 +88,7 @@
     <hr>
 
     <div class="portafolio">
-        <h1>Clientes aliados</h1>
+        <h1>Nuestros clientes</h1>
     </div>
 
     <div id="clientes">
@@ -97,7 +97,34 @@
         <div><img src="img/foto_capacitaciones.jpeg" alt=""></div>
         <div><img src="img/foto_elaboracion_programas_sst.jpeg" alt=""></div>
     </div>
+    <hr>
+    
+    <div class="portafolio">
+        <h1>Agendar cita</h1>
+    </div>
 
+    <div id="formulario">
+        <div id="texto_formulario">
+            <h2>Como agendar cita</h2><br>
+            <ol>
+                <li>Complete el formulario que se encuentra enseguida.</li><br>
+                <li>Al completar el formulario se enviara un correo con los datos registrados a SIGEEM, con los cuales se realizara una presentacion brindando una solucion a la solicitud.</li><br>
+                <li>Se procedera a enviar un correo de respuesta con la oferta necesaria de acuerdo a la solicitud generada.</li><br>
+                <li>De ser aprobada la oferta via correo, se agendara una visita en sitio para concluir el modo de trabajo que se realizara dentro de la empresa.</li>
+            </ol>
+        </div>
+        <div>
+            <form action="" id="agendar_cita">
+                <h2>Formulario de solicitud</h2><br>
+                <input type="text" placeholder="Registre un correo de contacto" class="campo">
+                <input type="text" placeholder="Nombre de la persona que solicita" class="campo"><br>
+                <input type="text" placeholder="Empresa a la que pertenece" class="campo"><br>
+                <input type="text" placeholder="Tipo de visita" class="campo"><br>
+                <textarea name="" id="" placeholder="Especifique la necesita que se desea solventar con la visita" class="campo_area"></textarea><br>
+                <input type="submit" id="boton">
+            </form>
+        </div>
+    </div>
     <footer id="pie-pagina">
         <div class="pie-datos">
             <h1>Contactenos</h1>
@@ -122,6 +149,7 @@
                 <img src="icons/twiter.png" alt="">
         </div>
     </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="funciones.js"></script>
 </body>
 </html>
