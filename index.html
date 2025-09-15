@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/estilo.css">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Sigeem</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
                 </li>
                 <li><a href="">Contactenos</a>
                     <ul>
-                        <li><a href="#formulario">Agendar cita</a></li>
+                        <li><a href="#agendar">Agendar cita</a></li>
                     </ul>
                 </li>
             </ul>
@@ -37,16 +38,23 @@
     </header>
 
     <div class="banner">
-        <h1>SST</h1>
-        <P>La Seguridad y Salud en el Trabajo es la base para proteger la vida de los trabajadores, impulsar la productividad y garantizar un entorno laboral sostenible y responsable.</P>
+        
     </div>
 
     <div id="llamado-accion">
-        <h1>Llamado a la accion</h1>
-        <p>Es fundamental en las empresas porque protege la vida y la salud de los trabajadores, 
-        previene accidentes y enfermedades laborales, y genera beneficios económicos y reputacionales significativos 
-        para la organización. Es una disciplina que se enfoca en la prevención de riesgos y en la creación de un entorno de 
-        trabajo seguro y saludable</p>
+        <h1>Quienes somos</h1>
+        <p>SIGEEM (Sistemas de Gestión Empresarial)es una empresa legalmente constituida desde
+        abril de 2023, creada con el objetivo de brindar soluciones técnicas especializadas en la
+        gestión organizacional, enfocándonos principalmente en la Seguridad y Salud en el Trabajo
+        (SG-SST).<br><br>
+        Nos caracterizamos por ofrecer un acompañamiento cercano, práctico y adaptado a las
+        necesidades reales de cada organización, sin importar su tamaño o sector económico.
+        Nuestra experiencia y enfoque técnico nos permite apoyar a las empresas en la
+        estructuración, evaluación y mejora de sus sistemas de gestión, asegurando el
+        cumplimiento normativo y fortaleciendo su desempeño interno.<br><br>
+        Más que una consultora, somos aliados estratégicos en la construcción de ambientes
+        laborales seguros, eficientes y sostenibles.
+        </p>
     </div>
     <hr>
 
@@ -92,15 +100,20 @@
     </div>
 
     <div id="clientes">
-        <div><img src="img/foto_acompañamientos.jpeg" alt=""></div>
-        <div><img src="img/foto_auditorias.jpeg" alt=""></div>
-        <div><img src="img/foto_capacitaciones.jpeg" alt=""></div>
-        <div><img src="img/foto_elaboracion_programas_sst.jpeg" alt=""></div>
+        <div><img src="img/jhones_pig.jpg" alt=""></div>
+        <div><img src="img/industria_colombiana_carnes.jpg" alt=""></div>
+        <div><img src="img/telenet.jpg" alt=""></div>
+        <div><img src="img/AyW.jpg" alt=""></div>
+        <div><img src="img/proemflex.jpg" alt=""></div>
+        <div><img src="img/distri_joes.jpg" alt=""></div>
+        <div><img src="img/fries.jpg" alt=""></div>
+        <div><img src="img/ln_maquinaria.jpg" alt=""></div>
+        <div><img src="img/continental_water.jpg" alt=""></div>
     </div>
     <hr>
     
     <div class="portafolio">
-        <h1>Agendar cita</h1>
+        <h1 id="agendar">Agendar cita</h1>
     </div>
 
     <div id="formulario">
@@ -116,12 +129,12 @@
         <div>
             <form action="" id="agendar_cita">
                 <h2>Formulario de solicitud</h2><br>
-                <input type="text" placeholder="Registre un correo de contacto" class="campo">
-                <input type="text" placeholder="Nombre de la persona que solicita" class="campo"><br>
-                <input type="text" placeholder="Empresa a la que pertenece" class="campo"><br>
-                <input type="text" placeholder="Tipo de visita" class="campo"><br>
-                <textarea name="" id="" placeholder="Especifique la necesita que se desea solventar con la visita" class="campo_area"></textarea><br>
-                <input type="submit" id="boton">
+                <input type="email" placeholder="Registre un correo de contacto" class="campo" required="">
+                <input type="text" placeholder="Nombre de la persona que solicita" class="campo" required=""><br>
+                <input type="text" placeholder="Empresa a la que pertenece" class="campo" required=""><br>
+                <input type="text" placeholder="Tipo de visita" class="campo" required=""><br>
+                <textarea name="" id="" placeholder="Especifique la necesita que se desea solventar con la visita" class="campo_area" required=""></textarea><br>
+                <button type="submit" id="boton" onclick="enviarcorreo()" disabled>Enviar</button>
             </form>
         </div>
     </div>
@@ -130,10 +143,10 @@
             <h1>Contactenos</h1>
             <ul>
                 <h3>WhatsApp:</h3>
-                <li>3209861462</li><br>
+                <li>Andrea Rojas: 304 4239664</li><br>
 
                 <h3>Correo:</h3>
-                <li>angie.sst.co@gmail.com</li>
+                <li>asesoriassg.ar@gmail.com</li>
             </ul>
         </div>
         <div class="pie-datos">
