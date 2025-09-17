@@ -237,7 +237,7 @@ hr{
 #pie-pagina{
     display: grid;
     text-align: center;
-    height: 250px;
+    height: 200px;
     padding: 50px;
     color: #f4f6f8;
     grid-template-columns: repeat(3, 1fr);
