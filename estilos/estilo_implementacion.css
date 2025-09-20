@@ -87,11 +87,64 @@ hr{
     margin: auto;
 }
 
+#banner_implementacion{
+    background-color: #c7e7c9;
+    padding-top: 20px;
+    height: 550px;
+}
+
+#banner_implementacion img{
+    width: 40%;
+    border-radius: 10px;
+    display: flex;
+    float: right;
+    margin-right: 100px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+#titulo_implementacion{
+    font-size: 28px;
+    width: 30%;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+#informacion{
+    height: 450px;
+    font-size: 25px;
+    width: 80%;
+    margin: 40px auto;
+    text-align: left;
+}
+
+#informacion ul{
+    list-style: disc;
+}
+
+#actividades{
+    margin: 50px auto;
+    width: 90%;
+    height: 500px;
+}
+
+#actividades #imagen_actividades img{
+    width: 600px;
+    float: left;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+#lista_actividades{
+    width: 45%;
+    float: right;
+    font-size: 25px;
+}
+
 /*PIE DE PAGINA*/
 #pie-pagina{
     display: grid;
     text-align: center;
-    height: 250px;
+    height: 200px;
     padding: 50px;
     color: #f4f6f8;
     grid-template-columns: repeat(3, 1fr);
@@ -113,158 +166,3 @@ hr{
     margin: 10px 10px;
 }
 
-@media (max-width: 1000px) {
-    .banner{
-        width: 92%;
-        height: 400px;
-    }
-
-    #llamado-accion{
-        height: 400px;
-        padding-top: 100px;
-    }
-
-    #formulario{
-        grid-template-columns: 1fr;
-        height: 1000px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 900px){
-    .banner{
-        width: 92%;
-        height: 300px;
-    }
-
-    .banner img{
-        width: 100%;
-        margin: auto;
-        height: 450px;
-    }
-
-    #llamado-accion{
-        height: 450px;
-        padding-top: 200px;
-    }
-
-    #servicios{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    #clientes{
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-
-@media (max-width: 670px){
-    .banner{
-        width: 92%;
-        height: 200px;
-    }
-
-    .banner img{
-        width: 100%;
-        margin: auto;
-        height: 400px;
-    }
-    
-    #llamado-accion{
-        height: 550px;
-        padding-top: 300px;
-    }
-
-    #clientes{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    #pie-pagina{
-        grid-template-columns: 1fr;
-        height: 350px;
-    }
-}
-
-@media (max-width: 500px){
-    .banner{
-        width: 92%;
-        height: 200px;
-    }
-
-    .banner img{
-        width: 100%;
-        margin: auto;
-        height: 300px;
-    }
-
-    #llamado-accion{
-        height: 550px;
-        padding-top: 300px;
-    }
-
-    #servicios{
-        grid-template-columns: 1fr;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #clientes img{
-        width: 500px;
-        height: 100px;
-        object-fit: cover;
-        margin-right: 30px;
-        border-radius: 5px;
-    }
-
-    #formulario{
-        grid-template-columns: 1fr;
-        height: 1000px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #texto_formulario{
-        height: 500px;
-    }
-
-    #agendar_cita{
-        margin: auto;
-    }
-
-    #pie-pagina{
-        height: 400px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 340px){
-    header{
-        width: 100%;
-    }
-    .banner{
-        width: 100%;
-        height: 200px;
-    }    
-
-    .banner img{
-        width: 100%;
-        margin: auto;
-        height: 200px;
-    }
-
-    #llamado-accion{
-        height: 800px;
-        padding-top: 5px;
-        margin-top: 5px;
-        width: 100%;
-    }
-
-    #texto_formulario{
-        height: 700px;
-    }
-}

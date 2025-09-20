@@ -233,6 +233,30 @@ hr{
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
 }
 
+#estrategia{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    height: 500px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+#estrategia #imagen_estrategia img{
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+#estrategia #imagen_estrategia h2{
+    margin-bottom: 50px;
+}
+
+#estrategia #texto_estrategia{
+    font-size: 25px;
+    margin-top: 50px;
+}
+
 /*PIE DE PAGINA*/
 #pie-pagina{
     display: grid;

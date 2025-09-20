@@ -86,3 +86,99 @@ hr{
     width: 80%;
     margin: auto;
 }
+
+#banner_capacitaciones{
+    background-color: #c7e7c9;
+    padding-top: 20px;
+    height: 500px;
+}
+
+#banner_capacitaciones img{
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    float: right;
+    margin-right: 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+#titulo_pesv{
+    font-size: 30px;
+    width: 30%;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+#informacion{
+    height: 100px;
+    font-size: 25px;
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#actividades{
+    margin: 50px auto;
+    width: 70%;
+    height: 400px;
+}
+
+#imagen_actividades img{
+    float: left;
+    border-radius: 200px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+#lista_actividades{
+    width: 50%;
+    float: right;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+#lista_actividades ul{
+    list-style: disc;
+}
+
+#nota{
+    height: 500px;
+    width: 60%;
+    margin: 50px auto;
+    font-size: 25px;
+    text-align: left;
+}
+
+#nota p{
+    margin-bottom: 40px;
+}
+
+#nota #imagen_misionalidad{
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/*PIE DE PAGINA*/
+#pie-pagina{
+    display: grid;
+    text-align: center;
+    height: 200px;
+    padding: 50px;
+    color: #f4f6f8;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #2e7d32;
+    font-size: 18px;
+}
+
+#pie-pagina h1{
+    margin-bottom: 30px;
+}
+
+#pie-pagina img{
+    width: 40px;
+    margin: 5px;
+}
+
+#pie-pagina .icono_indicativo{
+    width: 20px;
+    margin: 10px 10px;
+}
+

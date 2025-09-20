@@ -86,3 +86,109 @@ hr{
     width: 80%;
     margin: auto;
 }
+
+#banner_talentohumano{
+    background-color: #c7e7c9;
+    padding-top: 20px;
+    height: 450px;
+}
+
+#banner_talentohumano img{
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    float: right;
+    margin-right: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+#titulo_talentohumano{
+    font-size: 30px;
+    width: 30%;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+#informacion{
+    height: 650px;
+    font-size: 25px;
+    width: 80%;
+    margin: 40px auto;
+    text-align: left;
+}
+
+#informacion ul{
+    list-style:disc;
+    margin-left: 100px;
+}
+
+#mision_vision{
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 50px;
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+}
+
+#mision_vision h2{
+    background-color: #c7e7c9;
+    text-align: center;
+}
+
+#valores_corporativos{
+    background-color: #1b5e20;
+    text-align: center;
+    margin: 50px auto;
+    width: 90%;
+    color: beige;
+}
+
+#valores{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    width: 70%;
+    margin: 50px auto;
+    font-size: 20px;
+}
+
+#valores ul{
+    list-style: disc;
+}
+
+#valores img{
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+#valores h3{
+    margin-bottom: 30px;
+}
+
+/*PIE DE PAGINA*/
+#pie-pagina{
+    display: grid;
+    text-align: center;
+    height: 200px;
+    padding: 50px;
+    color: #f4f6f8;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #2e7d32;
+    font-size: 18px;
+}
+
+#pie-pagina h1{
+    margin-bottom: 30px;
+}
+
+#pie-pagina img{
+    width: 40px;
+    margin: 5px;
+}
+
+#pie-pagina .icono_indicativo{
+    width: 20px;
+    margin: 10px 10px;
+}
+
