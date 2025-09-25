@@ -189,7 +189,7 @@ hr{
 }
 
 #agendar_cita{
-    height: 400px;
+    height: 420px;
     width: 80%;
     padding: 20px 30px;
     border-radius: 8px;
@@ -207,16 +207,8 @@ hr{
     border: none;
 }
 
-#agendar_cita .campo_area{
-    width: 80%;
-    height: 100px;
-    margin-top: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: none;
-    resize: none;
+#agendar_cita .opcion{
+    margin-left: 40px;
 }
 
 #agendar_cita #boton{

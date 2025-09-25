@@ -140,11 +140,21 @@
         <div>
             <form action="" id="agendar_cita">
                 <h2>Formulario de solicitud</h2><br>
+                <input type="text" placeholder="Tipo de servicio" class="campo" required=""><br><br>
+
+                <label for="">Solicitar la cita de modo:</label><br>
+                <input type="radio" name="seleccion" value="Virtual" class="opcion">Virtual
+                <input type="radio" name="seleccion" value="Presencial" class="opcion">Presencial<br><br>
+
+                <label for="">Rando de horario de disponibilidad</label><br>
+                <label for="">Hora inicio</label>
+                <input type="time" name="" id="">
+                <label for="">Hora final</label>
+                <input type="time" name="" id=""><br><br>
+
                 <input type="email" placeholder="Registre un correo de contacto" class="campo" required="">
                 <input type="text" placeholder="Nombre de la persona que solicita" class="campo" required=""><br>
-                <input type="text" placeholder="Empresa a la que pertenece" class="campo" required=""><br>
-                <input type="text" placeholder="Tipo de visita" class="campo" required=""><br>
-                <textarea name="" id="" placeholder="Especifique la necesita que se desea solventar con la visita" class="campo_area" required=""></textarea><br>
+                <input type="text" placeholder="Empresa a la que pertenece" class="campo" required=""><br><br>
                 <button type="submit" id="boton" onclick="enviarcorreo()" disabled>Enviar</button>
             </form>
         </div>

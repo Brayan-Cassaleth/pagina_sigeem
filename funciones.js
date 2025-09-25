@@ -15,7 +15,11 @@ const boton = document.getElementById("boton");
 function validarFormulario() {
     // Verifica que todos los inputs tengan valor
     let vacios = Array.from(inputs).some(input => input.value.trim() === "");
-    boton.disabled = vacios; // Si hay vacío → bloquea
+    let seleccion = document.querySelector('input[name="seleccion"]:checked');
+
+    if(seleccion){
+        boton.disabled = vacios; // Si hay vacío → bloquea
+    }
 }
 
 // Detectar cambios en los inputs
