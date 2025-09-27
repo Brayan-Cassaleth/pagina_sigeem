@@ -293,6 +293,14 @@ hr{
         flex-direction: column;
         align-items: center;
     }
+
+    #formulario #agendar_cita{
+        width: 100%;
+    }
+
+    #estrategia{
+        height: 600px;
+    }
 }
 
 @media (max-width: 900px){
@@ -319,10 +327,29 @@ hr{
     #clientes{
         grid-template-columns: repeat(3, 1fr);
     }
+
+    #estrategia{
+        height: 700px;
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    #estrategia #texto_estrategia{
+        margin-top: 5px;
+    }
 }
 
 
 @media (max-width: 670px){
+    header nav #menu li a{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: gray;
+        height: 100%;
+    }
+
     .banner{
         width: 92%;
         height: 200px;
@@ -343,9 +370,17 @@ hr{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    #estrategia{
+        height: 800px;
+    }
+
     #pie-pagina{
         grid-template-columns: 1fr;
         height: 350px;
+    }
+
+    #formulario #agendar_cita{
+        margin-top: 50px;
     }
 }
 
@@ -428,5 +463,9 @@ hr{
 
     #texto_formulario{
         height: 700px;
+    }
+
+    #estrategia{
+        padding-top: 150px;
     }
 }

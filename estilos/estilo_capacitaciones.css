@@ -119,12 +119,13 @@ hr{
 
 #actividades{
     margin: 50px auto;
-    width: 80%;
+    width: 90%;
     height: 300px;
 }
 
 #imagen_actividades img{
     float: left;
+    margin-left: 80px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
@@ -168,5 +169,69 @@ hr{
 #pie-pagina .icono_indicativo{
     width: 20px;
     margin: 10px 10px;
+}
+
+@media(max-width: 1115px){
+    #banner_capacitaciones #titulo_capacitaciones{
+        width: 50%;
+        font-size: 20px;
+    }
+
+    #actividades{
+        height: 300px;
+        width: 90%;
+    }
+
+    #actividades #imagen_actividades img{
+        width: 40%;
+    }
+
+    #actividades #lista_actividades{
+        width: 40%;
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 1000px){
+    #informacion{
+        height: 300px;
+    }
+
+    #nota{
+        height: 200px;
+    }
+}
+
+@media(max-width: 700px){
+    #banner_capacitaciones{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #banner_capacitaciones img{
+        margin-bottom: 5px;
+        margin-left: 200px;
+    }
+
+    #banner_capacitaciones #titulo_capacitaciones{
+        margin-left: 200px;
+        margin-top: 10px;
+    }
+
+    #actividades{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        height: 650px;
+    }
+
+    #actividades #imagen_actividades img{
+        margin-left: 150px;
+        width: 50%;
+    }
+
+    #actividades #lista_actividades{
+        margin: auto;
+    }
 }
 
