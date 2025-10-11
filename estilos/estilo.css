@@ -111,7 +111,13 @@ hr{
     font-size: 20px;
 }
 
-.portafolio h1{
+#portafolio h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.titulos h1{
     text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -121,7 +127,7 @@ hr{
 /* SERVICIOS*/
 #servicios{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);/* dividimos en 3 columnas*/
+    grid-template-columns: repeat(2, 1fr);/* dividimos en 2 columnas*/
     gap: 50px;
     margin: 40px auto;
     width: 70%;
@@ -135,6 +141,11 @@ hr{
     display: flex;
     margin: 20px auto;
     align-items: center;
+}
+
+#servicios img:hover{
+    width: 85px;
+    height: 85px;
 }
 
 #servicios h3{

@@ -111,7 +111,7 @@ hr{
 }
 
 #informacion{
-    height: 450px;
+    height: 500px;
     font-size: 25px;
     width: 80%;
     margin: 40px auto;
@@ -125,11 +125,11 @@ hr{
 #actividades{
     margin: 50px auto;
     width: 90%;
-    height: 500px;
+    height: 600px;
 }
 
 #actividades #imagen_actividades img{
-    width: 600px;
+    width: 50%;
     float: left;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
@@ -165,5 +165,39 @@ hr{
 #pie-pagina .icono_indicativo{
     width: 20px;
     margin: 10px 10px;
+}
+
+@media(max-width:1000px){
+    #banner_implementacion{
+        height: 500px;
+    }
+    #titulo_implementacion{
+        font-size: 25px;
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    #banner_implementacion img{
+        width: 30%;
+    }
+
+    #informacion{
+        height: 650px;
+    }
+
+    #actividades{
+        height: 800px;
+        position: relative;
+    }
+
+    #lista_actividades{
+        width: 100%;
+    }
+
+    #actividades #imagen_actividades img{
+        width: 50%;
+        margin-top: 50px;
+        margin-left: 10%;
+    }
 }
 

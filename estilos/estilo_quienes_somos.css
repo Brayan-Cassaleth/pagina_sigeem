@@ -96,15 +96,14 @@ hr{
 #banner_talentohumano img{
     width: 30%;
     border-radius: 10px;
-    display: flex;
     float: right;
-    margin-right: 300px;
+    margin-right: 200px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
 #titulo_talentohumano{
     font-size: 30px;
-    width: 30%;
+    width: 40%;
     margin-top: 50px;
     margin-left: 200px;
 }
@@ -192,3 +191,10 @@ hr{
     margin: 10px 10px;
 }
 
+@media(max-width: 1030px){
+    #informacion{
+        width: 90%;
+        height: 800px;
+        padding-bottom: 20px;
+    }
+}
