@@ -89,18 +89,12 @@ hr{
 
 #banner_implementacion{
     background-color: #c7e7c9;
-    padding-top: 20px;
-    height: 550px;
+    height: 500px;
 }
 
 #banner_implementacion img{
-    width: 40%;
-    border-radius: 10px;
-    display: flex;
-    float: right;
-    margin-top: 80px;
-    margin-right: 100px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
 }
 
 #titulo_implementacion{

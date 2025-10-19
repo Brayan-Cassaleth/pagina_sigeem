@@ -89,23 +89,12 @@ hr{
 
 #banner_talentohumano{
     background-color: #c7e7c9;
-    padding-top: 20px;
-    height: 450px;
+    height: 350px;
 }
 
 #banner_talentohumano img{
-    width: 30%;
-    border-radius: 10px;
-    float: right;
-    margin-right: 200px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-}
-
-#titulo_talentohumano{
-    font-size: 30px;
-    width: 40%;
-    margin-top: 50px;
-    margin-left: 200px;
+    width: 100%;
+    height: 100%;
 }
 
 #informacion{
@@ -189,6 +178,14 @@ hr{
 #pie-pagina .icono_indicativo{
     width: 20px;
     margin: 10px 10px;
+}
+
+@media(max-width: 1115px){
+    #informacion{
+        width: 90%;
+        height: 650px;
+        padding-bottom: 20px;
+    }
 }
 
 @media(max-width: 1030px){
